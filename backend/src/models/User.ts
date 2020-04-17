@@ -14,9 +14,6 @@ class User {
   @Column()
   password: string;
 
-  @Column('timestamp with time zone')
-  date: Date;
-
   @CreateDateColumn()
   created_at: Date;
 
