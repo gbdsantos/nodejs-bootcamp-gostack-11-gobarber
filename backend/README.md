@@ -4,9 +4,9 @@
 
 ## :rocket: Back-end with <span style="color:lightgreen;">NodeJS</span> + <span style="color:darkslateblue;">TypeScript</span>
 
-NodeJS + Typescript for the **second week(F 02)** of Bootcamp GoStack 11.
+NodeJS + Typescript for the **second week(F 03)** of Bootcamp GoStack 11.
 
-Project completed on xx/04/2020.
+Project completed on 19/04/2020.
 
 ## :gear: Getting Started
 
@@ -21,7 +21,7 @@ yarn dev:server
 
 ## Demo
 
-<img alt="GoStack" src="" />
+<img alt="Bootcamp GoStack Back-end 02" src="https://i.lensdump.com/i/jJfhDP.gif" />
 
 ## :man_astronaut: Author
 
