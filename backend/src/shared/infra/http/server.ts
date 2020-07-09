@@ -1,10 +1,10 @@
 import 'reflect-metadata';
 
-import express, { Request, Response, NextFunction, response } from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import 'express-async-errors';
 
-import '@modules/appointments/repositories/ApointmentsRepository';
+import '@shared/infra/typeorm';
 
 import routes from './routes';
 import uploadConfig from '@config/upload';
