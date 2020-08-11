@@ -4,6 +4,24 @@
 
 ## :rocket: Back-end with <span style="color:lightgreen;">NodeJS</span> + <span style="color:darkslateblue;">TypeScript</span>
 
+<p align="left">
+    <img alt="Github language count" src="https://img.shields.io/github/languages/count/gbdsantos/nodejs-bootcamp-gostack-11-gobarber">
+
+  <img alt="Github percentage language count" src="https://img.shields.io/github/languages/top/gbdsantos/nodejs-bootcamp-gostack-11-gobarber">
+
+  <a href="https://nodejs.org/">
+    <img alt="NodeJS version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/express">
+  </a>
+
+  <a href="https://www.typescriptlang.org/">
+    <img alt="Typescript version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/dev/typescript">
+  </a>
+
+  <img alt="Wakatime time of development" src="https://wakatime.com/badge/github/gbdsantos/nodejs-bootcamp-gostack-11-gobarber.svg">
+
+  <img alt="Github last commit" src="https://img.shields.io/github/last-commit/gbdsantos/nodejs-bootcamp-gostack-11-gobarber">
+</p>
+
 ## :bulb: About Project
 
 **GoBarber backend project** made with <span style="color:lightgreen; font-weight:bold;">**NodeJS**</span> + <span style="color:darkslateblue; font-weight:bold;">**TypeScript**</span>. At the level 04 of Bootcamp GoStack 11.
