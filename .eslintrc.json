@@ -46,6 +46,8 @@
     "no-useless-constructor": "off"
   },
   "settings": {
-    "typescript": {}
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
