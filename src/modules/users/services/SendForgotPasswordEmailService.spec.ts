@@ -19,7 +19,7 @@ describe('SendForgotPasswordEmail', () => {
 
     fakeUserTokensRepository = new FakeUserTokensRepository();
 
-    sendforgotPassword = new SendForgotPasswordEmailService(
+    sendForgotPasswordEmail = new SendForgotPasswordEmailService(
       fakeMailProvider,
       fakeUsersRepository,
       fakeUserTokensRepository,
@@ -35,7 +35,7 @@ describe('SendForgotPasswordEmail', () => {
       password: '123456',
     });
 
-    await sendforgotPassword.execute({
+    await sendForgotPasswordEmail.execute({
       email: 'johndoe@example.com',
     });
 
@@ -59,7 +59,7 @@ describe('SendForgotPasswordEmail', () => {
       password: '123456',
     });
 
-    await sendforgotPassword.execute({
+    await sendForgotPasswordEmail.execute({
       email: 'johndoe@example.com',
     });
 
