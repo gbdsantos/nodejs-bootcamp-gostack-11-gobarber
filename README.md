@@ -9,8 +9,16 @@
 
   <img alt="Github percentage language count" src="https://img.shields.io/github/languages/top/gbdsantos/nodejs-bootcamp-gostack-11-gobarber">
 
-  <a href="https://nodejs.org/">
-    <img alt="NodeJS version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/express">
+  <a href="hhttp://expressjs.com/">
+    <img alt="Express version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/express">
+  </a>
+
+  <a href="https://node-postgres.com/">
+    <img alt="Node-postgres version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/pg">
+  </a>
+
+  <a href="https://typeorm.io/#/">
+    <img alt="Typeorm version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/typeorm">
   </a>
 
   <a href="https://www.typescriptlang.org/">
