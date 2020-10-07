@@ -37,7 +37,7 @@ export default class SESMailProvider implements IMailProvider {
         address: to.email,
       },
       subject,
-      html: await this.mailTemplateProvider.parse(templateData);
+      html: await this.mailTemplateProvider.parse(templateData),
     });
   }
 }
