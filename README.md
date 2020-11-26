@@ -9,8 +9,12 @@
 
   <img alt="Github percentage language count" src="https://img.shields.io/github/languages/top/gbdsantos/nodejs-bootcamp-gostack-11-gobarber">
 
-  <a href="hhttp://expressjs.com/">
+  <a href="http://expressjs.com/">
     <img alt="Express version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/express">
+  </a>
+
+  <a href="https://nodejs.org/en/">
+    <img alt="NodeJS version" src="https://img.shields.io/badge/nodejs-v12.16.1%20LTS-brightgreen">
   </a>
 
   <a href="https://node-postgres.com/">
@@ -39,10 +43,23 @@ Project completed on 2020-xx-xx.
 ## :gear: Getting Started
 
 ```Bash
-# Install dependencies
+# 1. Install dependencies
 yarn install
 
-# Run application
+# 2. Create files .env and .ormconfig.json, see example files
+
+# 3. Create Postgres container with docker
+docker run --name rocketseat-bootcamp-gostack-11-gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+# 4. Create MongoDB container with docker
+docker run --name db-mongodb -p 27017:27017 -d -t mongo 
+
+# 4. Create database using any GUI or command line
+
+# 5. Execute migrations
+yarn typeorm migration:run
+
+# 6. Run application
 yarn dev:server
 ```
 
