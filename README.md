@@ -48,18 +48,22 @@ yarn install
 
 # 2. Create files .env and .ormconfig.json, see example files
 
-# 3. Create Postgres container with docker
+# 3. Create Postgres container with Docker
 docker run --name rocketseat-bootcamp-gostack-11-gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
-# 4. Create MongoDB container with docker
-docker run --name db-mongodb -p 27017:27017 -d -t mongo 
+# 4. Create Postgres database using any GUI or command line
+CREATE DATABASE gobarber;
 
-# 4. Create database using any GUI or command line
+# 5. Create MongoDB container with Docker
+docker run --name db-mongodb -p 27017:27017 -d -t mongo
 
-# 5. Execute migrations
+# 6. Create Redis container with Docker
+docker run --name redis -p 6379:6379 -d -t redis:alpine
+
+# 7. Execute migrations
 yarn typeorm migration:run
 
-# 6. Run application
+# 8. Run application
 yarn dev:server
 ```
 
