@@ -6,6 +6,8 @@ import AppError from '@shared/errors/AppError';
 import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
+import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
+
 import Notifications from '@modules/notifications/infra/typeorm/schemas/Notification';
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
 
@@ -21,26 +23,35 @@ class CreateAppointmentsService {
     @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
 
+    @inject('CacheProvider')
+    private cacheProvider: ICacheProvider,
+
     @inject('NotificationsRepository')
     private notificationsRepository: INotificationsRepository,
-  ) { }
+  ) {}
 
-  public async execute({ date, provider_id, user_id }: IRequest): Promise<Appointment> {
+  public async execute({
+    date,
+    provider_id,
+    user_id,
+  }: IRequest): Promise<Appointment> {
     const appointmentDate = startOfHour(date);
 
     /** 💡 The user cannot schedule an appointment that has passed **/
     if (isBefore(appointmentDate, Date.now())) {
-      throw new AppError("You can't create an appointment on a past date.")
+      throw new AppError("You can't create an appointment on a past date.");
     }
 
     /** 💡 The user cannot schedule appointment with himself **/
     if (user_id === provider_id) {
-      throw new AppError("You can't create an appointment with yourself.")
+      throw new AppError("You can't create an appointment with yourself.");
     }
 
     /** 💡 Appointments must be available between 8 am and 6 pm (First at 8 am, last at 5 pm) **/
     if (getHours(appointmentDate) < 8 || getHours(appointmentDate) > 17) {
-      throw new AppError("You can only create appointments between 8am and 5pm.");
+      throw new AppError(
+        'You can only create appointments between 8am and 5pm.',
+      );
     }
 
     const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
@@ -61,8 +72,15 @@ class CreateAppointmentsService {
 
     await this.notificationsRepository.create({
       recipient_id: provider_id,
-      content: `Novo agendamento para o dia ${dateFormatted}`
-    })
+      content: `Novo agendamento para o dia ${dateFormatted}`,
+    });
+
+    await this.cacheProvider.invalidate(
+      `provider-appointments:${provider_id}:${format(
+        appointmentDate,
+        'yyyy-M-d',
+      )}`,
+    );
 
     return appointment;
   }
