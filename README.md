@@ -46,7 +46,7 @@ Project completed on 2020-xx-xx.
 # 1. Install dependencies
 yarn install
 
-# 2. Create files .env and .ormconfig.json, see example files
+# 2. Create files .env and ormconfig.json, see example files
 
 # 3. Create Postgres container with Docker
 docker run --name rocketseat-bootcamp-gostack-11-gobarber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
