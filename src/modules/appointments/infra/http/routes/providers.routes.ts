@@ -19,12 +19,12 @@ providersRouter.get('/:provider_id/month-availability',
       provider_id: Joi.string().uuid().required(),
     }
   }),
-  ListProviderDayAvailability.index);
+  ListProviderMonthAvailability.index);
 
 providersRouter.get('/:provider_id/day-availability', celebrate({
   [Segments.PARAMS]: {
     provider_id: Joi.string().uuid().required(),
   }
-}), ListProviderMonthAvailability.index);
+}), ListProviderDayAvailability.index);
 
 export default providersRouter;
