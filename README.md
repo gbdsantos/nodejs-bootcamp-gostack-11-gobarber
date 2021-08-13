@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="GoStack" src="https://i.lensdump.com/i/jCEM0c.png" />
+    <img alt="GoStack" src="https://imagensbrasil.org/images/2021/08/03/Rocketseat---Bootcamp-GoStack-11-Banner.png" />
 </p>
 
 ## :rocket: Back-end with <span style="color:lightgreen;">NodeJS</span> + <span style="color:darkslateblue;">TypeScript</span>
@@ -13,12 +13,28 @@
     <img alt="Express version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/express">
   </a>
 
+  <a href="https://www.npmjs.com/package/jsonwebtoken/">
+    <img alt="JsonWebToken version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/jsonwebtoken">
+  </a>
+
+  <a href="https://www.npmjs.com/package/mongodb">
+    <img alt="Mongodb version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/mongodb">
+  </a>
+
+  <a href="https://www.npmjs.com/package/multer">
+    <img alt="Mongodb version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/multer">
+  </a>
+
   <a href="https://nodejs.org/en/">
     <img alt="NodeJS version" src="https://img.shields.io/badge/nodejs-v12.16.1%20LTS-brightgreen">
   </a>
 
   <a href="https://node-postgres.com/">
     <img alt="Node-postgres version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/pg">
+  </a>
+
+  <a href="https://www.npmjs.com/package/redis">
+    <img alt="Redis version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/nodejs-bootcamp-gostack-11-gobarber/redis">
   </a>
 
   <a href="https://typeorm.io/#/">
@@ -78,10 +94,6 @@ yarn dev:server
 
 This project is under the MIT license. See the [LICENSE](https://github.com/gbdsantos/bootcamp-gostack-gobarber-frontend/blob/master/LICENSE) for more information.
 
-## :man_astronaut: Author
+---
+Made with ♥ by :man_astronaut: Guilherme Bezerra :wave: [Get in touch!](https://www.linkedin.com/in/gbdsantos/)
 
-©️ **Guilherme Bezerra**
-
-[![github](http://ap.imagensbrasil.org/images/2018/12/10/github-logo-1.png) ](http://www.github.com/gbdsantos)
-[![gitlab](http://ap.imagensbrasil.org/images/2018/12/10/gitlab-32.png)](https://gitlab.com/gbdsantos1)
-[![linkedin](http://ap.imagensbrasil.org/images/2018/12/10/linkedin-1.png)](https://www.linkedin.com/in/gbdsantos/)
